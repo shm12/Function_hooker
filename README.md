@@ -42,7 +42,7 @@ In our dlopen! Filename: nothing
 
 # How it works
 The function patch_func is checking if there is enough space at the start of the 'old' function to insert jump instruction to our 'new' function without to override location depended instructions (such as jump). If there is enough space, the old insructions are copied to 'safe place' and then overrided by jump instruction.
-In the 'safe place', jump is wrriten right after the reserved instructions, back to the original natural continuation of the original function and thus, a pointer to the start of the reserved instuction can be treated like pointer to the original function.
+In the 'safe place', jump is written right after the reserved instructions, back to the natural continuation of the original function, and thus, a pointer to the start of the reserved instuction can be treated like pointer to the original function.
 
 # Issues
 - Loops. If the old function starts with loop, it can be that there is jump to one of the overriden instructins, and the patch will break the original function without to notice at all.
