@@ -52,5 +52,5 @@ Anyway, such things needs to be done carefully.
 
 # To Do
 - Enable multi function hooking (for now, only one function can be hooked at a time).
-- Take care of instructions like jump and reloacet them (copy them and fix their far value), instead of mark them as 'not-relocatable's.
+- Take care of instructions like jump and relocate them (copy them and fix their far value), instead of mark them as 'not-relocatable's.
 - And more.
