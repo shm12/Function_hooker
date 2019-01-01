@@ -5,7 +5,7 @@
 void *(*origin_dlopen)(const char *, int) = dlopen;
 
 void *new_dlopen(const char *filename, int flag){
-    ("In our dlopen! Filename: %s\n", filename);
+    printf("In our dlopen! Filename: %s\n", filename);
     return origin_dlopen(filename, flag);
 }
 
