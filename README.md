@@ -31,7 +31,7 @@ int main() {
 ```
 Now, if we run the follows:
 ```bash
-$ gcc dlopen_hook_example.c func_hook.c -ldl -o dlopen_hook
+$ gcc dlopen_hook_example.c func_hook.c -ldl -lcapstone -o dlopen_hook
 $ ./dlopen_hook
 ```
 The output will be:
