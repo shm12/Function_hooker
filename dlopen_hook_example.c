@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <dlfcn.h>
-#include "func_hook.c"
+#include "func_hook.h"
 
 void *(*origin_dlopen)(const char *, int) = dlopen;
 
